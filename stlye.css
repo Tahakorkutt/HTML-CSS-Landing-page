@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* banner start */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #142e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+.banner .content h2 {
+  color: white;
+  margin-top: 150px;
+  font-size: 60px;
+}
+.banner .content p {
+  color: white;
+  font-size: 18px;
+}
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+.banner .logo {
+  color: white;
+  text-decoration: none;
+}
+.banner .logo span {
+  color: yellow;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+}
+.banner header {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.banner header .toogle {
+  position: relative;
+  width: 36px;
+  height: 28px;
+  background: url(./img/toggle.png);
+  background-size: cover;
+  cursor: pointer;
+  color: white;
+}
+/* form start */
+form {
+  margin: 50px 0;
+}
+
+input {
+  font-size: 18px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 97%;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  display: block;
+}
+
+input[type="submit"] {
+  width: 97%;
+  background-color: #a460ed;
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+
+.contentBx {
+  display: block;
+  background: yellow;
+  padding: 90px;
+  width: 50%;
+}
+
+input[type="submitt"] {
+  text-align: center;
+  width: 97%;
+  background-color: #a460ed;
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.container {
+
+  background: url(https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=1380&t=st=1663194472~exp=1663195072~hmac=b9affcee4cb7a5aabffacbbe66b9e0748f1faaba9a8f03c4f6681c501e32f9e9);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* techonology start */
+
+.techonology {
+  background: rgb(187, 255, 0);
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* sponsor start */
+.sponsor {
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+}
+.sponsor .imgbx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.sponsor .imgbx img {
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+.sponsor .imgbx img:hover {
+  opacity: 1;
+}
+.sponsor h2 {
+  font-size: 50px;
+  color: white;
+  box-shadow: #3f8ffc;
+}
+.sponsor p {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* footer start */
+.footer {
+  background: yellow;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer ul li a img {
+  max-width: 20px;
+}
+.footer p {
+  font-weight: 700;
+  color: black;
+}
+.footer .textt {
+  font-size: 30px;
+}
+@media (max-width:991px){
+.banner{
+  padding: 50px;
+}
+.banner header{
+
+  padding: 20px 50;
+}
+.banner .content h2{
+  font-size: 36px;
+}
+.banner .content p{
+  font-size: 16px;
+}
+.container {
+  flex-direction: column;
+}
+.container .contentBx,
+.container .imgbx{
+  width: 100%;
+  padding: 50px;
+  min-height: 400px;
+ text-align: center;
+
+}
+
+
+
+.techonology {
+  flex-direction: column;
+}
+
+.techonology .contentbx,
+.techonology  .imgbx{
+  width: 100%;
+  padding: 50px;
+  min-height: 400px;
+text-align: center;
+}
+.footer {
+
+padding: 20px 50px;
+flex-direction: column-reverse;
+text-align: center;
+
+}
+
+}
